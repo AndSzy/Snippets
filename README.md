@@ -61,8 +61,8 @@ https://ia.net/topics/responsive-typography-the-basics
 https://www.smashingmagazine.com/2014/04/understanding-css-timing-functions/  
 
 IMPORTANT
--https://www.bootstrapcdn.com/fontawesome/
--https://cdnjs.com/libraries/animate.css/
+- https://www.bootstrapcdn.com/fontawesome/
+- https://cdnjs.com/libraries/animate.css/
 
 https://unicode-table.com/en/  
 https://www.w3schools.com/cssref/css_default_values.asp  
@@ -70,5 +70,5 @@ https://tympanus.net/codrops/css_reference/
 
 
 # JS
--https://underscorejs.org/#  
--https://github.com/michalsnik/aos
+- https://underscorejs.org/#  
+- https://github.com/michalsnik/aos
