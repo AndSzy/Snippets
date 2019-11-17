@@ -12,9 +12,11 @@ git status
 
 ## Node.js / Express
 
-https://expressjs.com/
-https://www.npmjs.com/package/body-parser
+https://expressjs.com/  
+https://www.npmjs.com/package/body-parser  
 https://www.npmjs.com/package/request
+https://www.npmjs.com/package/nodemon  
+
 
 ```
 const express = require('express');
@@ -50,3 +52,23 @@ app.listen(3000, function () {
   console.log("Server is running on port 3000");
 })
 ```
+# HTML/CSS
+
+https://codeguide.co/  
+https://randoma11y.com/  
+https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048  
+https://ia.net/topics/responsive-typography-the-basics  
+https://www.smashingmagazine.com/2014/04/understanding-css-timing-functions/  
+
+IMPORTANT
+-https://www.bootstrapcdn.com/fontawesome/
+-https://cdnjs.com/libraries/animate.css/
+
+https://unicode-table.com/en/  
+https://www.w3schools.com/cssref/css_default_values.asp  
+https://tympanus.net/codrops/css_reference/  
+
+
+# JS
+-https://underscorejs.org/#  
+-https://github.com/michalsnik/aos
