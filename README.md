@@ -2,11 +2,11 @@
 
 ## Git
 
-git init
-git add / git remove --cached
-git commit -m "comment"
-git remote add <name> <url>
-git push <name>
+git init  
+git add / git remove --cached  
+git commit -m "comment"  
+git remote add <name> <url>  
+git push <name>  
 
 git status
 
