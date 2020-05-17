@@ -10,12 +10,24 @@ git push <name>
 
 git status
 
+---Viewing the commit history:
+git log
+
 ## Node.js / Express
 
 https://expressjs.com/  
 https://www.npmjs.com/package/body-parser  
 https://www.npmjs.com/package/request
 https://www.npmjs.com/package/nodemon  
+
+---CORS middleware
+https://expressjs.com/en/resources/middleware/cors.html
+
+var express = require('express')
+var cors = require('cors')
+var app = express()
+
+app.use(cors())
 
 
 ```
