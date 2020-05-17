@@ -27,9 +27,9 @@ var express = require('express')
 var cors = require('cors')  
 var app = express()  
 
-app.use(cors())
+app.use(cors())  
 
-
+--------------  
 ```
 const express = require('express');
 const bodyParser = require('body-parser');
