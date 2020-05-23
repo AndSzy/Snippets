@@ -17,20 +17,41 @@ https://www.npmjs.com/package/body-parser
 https://www.npmjs.com/package/request
 https://www.npmjs.com/package/nodemon  
 
+npm init  
+npm install express
+
 
 ```
 const express = require('express');
+```
+*Node.js body parsing middleware.
+Parse incoming request bodies in a middleware before your handlers, available under the req.body property.*
+```
 const bodyParser = require('body-parser');
+```
+*Request is designed to be the simplest way possible to make http calls.*
+```
 const request = require('request');
 
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: true}));
+```
 
+*To serve static files such as images, CSS files, and JavaScript files, use the express.static built-in middleware function in Express. For example, use the following code to serve images, CSS files, and JavaScript files in a directory named public:*
+```
+app.use(express.static("public"));
+```
+
+*The HTTP GET method is used to request a resource from the server. Requests using GET and HEAD methods should only retrieve data (server must not change its state). If you want to change data on the server, use POST, PUT or DELETE methods.*
+```
 app.get("/", function(req, res) {
   res.sendFile(__dirname + "/index.html");
 })
+```
 
+*The HTTP POST method is used to send data to the server, or to create/update a resource. Unlike GET and HEAD requests, the POST requests may change the server state.*
+```
 app.post("/", function(req, res) {
   var crypto = req.body.crypto;
   var fiat = req.body.fiat;
@@ -47,11 +68,40 @@ app.post("/", function(req, res) {
   })
 
 })
-
+```
+*Binds and listens for connections on the specified host and port.*
+```
 app.listen(3000, function () {
   console.log("Server is running on port 3000");
 })
 ```
+### In Form tag we need to add action= "/" and method = "post"
+
+### process.env.PORT when deploying to Heroku || 3000
+
+# MONGO DB
+
+*show databases inside mongo shell*  
+
+```
+show dbs
+```
+
+*Create or insert collection of documents (single data record), where collection is the name*  
+```
+db.collection.insertOne( {
+  name: "sue",
+  age: 26,
+  status: "pending"
+  })
+
+  show collections
+```
+
+# MONGOOSE
+
+
+
 # HTML/CSS
 
 https://codeguide.co/  
