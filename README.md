@@ -8,10 +8,34 @@ git commit -m "comment"
 git remote add <name> <url>  
 git push <name>  
 
-git status
+git status  -s  
 
----Viewing the commit history: 
-git log
+git diff  (shows changes)  
+
+##### Squash  
+
+git commit --amend --no-edit  (merge to last commit)  
+git commit --amend -m "new message"
+
+git rebase -i HEAD~3   (HEAD = @)
+
+##### Reseting  A - B - C (master)
+
+|...| HEAD | index | Working Dir |
+| ---| ---| ---| ---|
+|git reset --soft B  | B | C | C |
+|git reset (--mixed) B  | B | B | C |
+|git reset --hard B  | B | B | B |
+
+###### More:  
+git reflog (log all ref updates)
+
+git show  =  git show HEAD
+git show <commit-id>: filename > oldfile.html (creating a file to open in editor)
+
+
+
+
 
 ## Node.js / Express
 
@@ -20,7 +44,7 @@ https://www.npmjs.com/package/body-parser
 https://www.npmjs.com/package/request
 https://www.npmjs.com/package/nodemon  
 
-<<<<<<< HEAD
+
 npm init  
 npm install express
 
@@ -33,7 +57,6 @@ var cors = require('cors')
 var app = express()  
 
 app.use(cors())  
->>>>>>> a754b87b79d05d65544c099cb46f7a364c4d0dc0
 
 --------------  
 ```
